@@ -1,0 +1,112 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>addEmployee</ion-title>
+    <ion-icon name="close" slot="end" size="large" class="ion-padding" (click)="dismiss()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-item>
+      <ion-label position="floating">First Name</ion-label>
+      <ion-textarea [(ngModel)]="employeeFirstName" placeholder="Enter First Name"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Last Name</ion-label>
+      <ion-textarea [(ngModel)]="employeeLastName" placeholder="Enter Last Name"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Surname</ion-label>
+      <ion-textarea [(ngModel)]="employeeSurname" placeholder="Enter Surname"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-textarea [(ngModel)]="employeeEmail" placeholder="Enter Email"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Title</ion-label>
+      <ion-textarea [(ngModel)]="employeeTitle" placeholder="Enter Title"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Date of Birth (dd-mm-yyyy)</ion-label>
+      <ion-textarea [(ngModel)]="employeeDateOfBirth" placeholder="Enter Date of Birth"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">ID Number</ion-label>
+      <ion-textarea [(ngModel)]="employeeIdNo" placeholder="Enter ID Number"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Gender</ion-label>
+      <ion-textarea [(ngModel)]="employeeGender" placeholder="Enter Gender"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-chip *ngFor="let gender of genders; let i = index" (click)="selectedGender(i)">
+        <ion-label>{{gender}}</ion-label>
+      </ion-chip>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nationality</ion-label>
+      <ion-textarea [(ngModel)]="employeeNationality" placeholder="Enter Nationality"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Ethnicity</ion-label>
+      <ion-textarea [(ngModel)]="employeeEthnicity" placeholder="Enter Ethnicity"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Home County</ion-label>
+      <ion-textarea [(ngModel)]="employeeHomeCounty" placeholder="Enter Home County"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Postal Address</ion-label>
+      <ion-textarea [(ngModel)]="employeePostalAddress" placeholder="Enter Postal Address"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Code</ion-label>
+      <ion-textarea [(ngModel)]="employeeCode" placeholder="Enter Code"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Town</ion-label>
+      <ion-textarea [(ngModel)]="employeeTown" placeholder="Enter Town"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Telephone Number</ion-label>
+      <ion-textarea [(ngModel)]="employeeTelephoneNumber" placeholder="Enter Telephone Number"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Mobile Number</ion-label>
+      <ion-textarea [(ngModel)]="employeeMobileNumber" placeholder="Enter Mobile Number"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Alternative Contact Person</ion-label>
+      <ion-textarea [(ngModel)]="employeeAlternativeContactPerson" placeholder="Enter Alternative Contact Person"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contact Person Telephone</ion-label>
+      <ion-textarea [(ngModel)]="employeeContactPersonTelephone" placeholder="Enter Contact Person Telephone"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Disability</ion-label>
+      <ion-textarea [(ngModel)]="employeeDisability" placeholder="Enter Disability"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Disability Details</ion-label>
+      <ion-textarea [(ngModel)]="employeeDisabilityDetails" placeholder="Enter Disability Details"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Disability Registration Number</ion-label>
+      <ion-textarea [(ngModel)]="employeeDisabilityRegNumber" placeholder="Enter Disability Registration Number"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Disability Registration Date</ion-label>
+      <ion-textarea [(ngModel)]="employeeDisabilityRegDate" placeholder="Enter Disability Registration Date"></ion-textarea>
+    </ion-item>
+
+  
+
+  
+
+    <ion-item>
+      <ion-button class="ion-margin" expand="block" (click)="addEmployee()">Add Employee</ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>

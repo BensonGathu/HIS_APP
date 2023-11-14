@@ -1,0 +1,155 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button click="goToHomePage()"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Employee Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+
+  <ion-card class="ion-margin-bottom">
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Employee Information</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+    
+      <ion-item>
+        <ion-label position="floating">First Name</ion-label>
+        <ion-input [(ngModel)]="employee.firstname" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Last Name -->
+      <ion-item>
+        <ion-label position="floating">Last Name</ion-label>
+        <ion-input [(ngModel)]="employee.lastname" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Surname -->
+      <ion-item>
+        <ion-label position="floating">Surname</ion-label>
+        <ion-input [(ngModel)]="employee.surname" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Email -->
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input [(ngModel)]="employee.email" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Title -->
+      <ion-item>
+        <ion-label position="floating">Title</ion-label>
+        <ion-input [(ngModel)]="employee.title" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Date of Birth -->
+      <ion-item>
+        <ion-label position="floating">Date of Birth</ion-label>
+        <ion-input [(ngModel)]="employee.date_of_birth" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- ID Number -->
+      <ion-item>
+        <ion-label position="floating">ID Number</ion-label>
+        <ion-input [(ngModel)]="employee.id_no" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Gender -->
+      <ion-item>
+        <ion-label position="floating">Gender</ion-label>
+        <ion-input [(ngModel)]="employee.gender" class="ion-text-end"></ion-input>
+        
+      </ion-item>
+
+      <!-- Nationality -->
+      <ion-item>
+        <ion-label position="floating">Nationality</ion-label>
+        <ion-input [(ngModel)]="employee.nationality" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Ethnicity -->
+      <ion-item>
+        <ion-label position="floating">Ethnicity</ion-label>
+        <ion-input [(ngModel)]="employee.ethnicity" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Home County -->
+      <ion-item>
+        <ion-label position="floating">Home County</ion-label>
+        <ion-input [(ngModel)]="employee.home_county" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Postal Address -->
+      <ion-item>
+        <ion-label position="floating">Postal Address</ion-label>
+        <ion-input [(ngModel)]="employee.postal_address" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Code -->
+      <ion-item>
+        <ion-label position="floating">Code</ion-label>
+        <ion-input [(ngModel)]="employee.code" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Town -->
+      <ion-item>
+        <ion-label position="floating">Town</ion-label>
+        <ion-input [(ngModel)]="employee.town" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Telephone Number -->
+      <ion-item>
+        <ion-label position="floating">Telephone Number</ion-label>
+        <ion-input [(ngModel)]="employee.telephone_number" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Mobile Number -->
+      <ion-item>
+        <ion-label position="floating">Mobile Number</ion-label>
+        <ion-input [(ngModel)]="employee.mobile_number" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Alternative Contact Person -->
+      <ion-item>
+        <ion-label position="floating">Alternative Contact Person</ion-label>
+        <ion-input [(ngModel)]="employee.alternative_contact_person" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Contact Person Telephone -->
+      <ion-item>
+        <ion-label position="floating">Contact Person Telephone</ion-label>
+        <ion-input [(ngModel)]="employee.contact_person_telephone" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Disability -->
+      <ion-item>
+        <ion-label position="floating">Disability</ion-label>
+        <ion-input [(ngModel)]="employee.disability" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Disability Details -->
+      <ion-item>
+        <ion-label position="floating">Disability Details</ion-label>
+        <ion-input [(ngModel)]="employee.disability_details" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Disability Registration Number -->
+      <ion-item>
+        <ion-label position="floating">Disability Registration Number</ion-label>
+        <ion-input [(ngModel)]="employee.disability_reg_number" class="ion-text-end"></ion-input>
+      </ion-item>
+
+      <!-- Disability Registration Date -->
+      <ion-item>
+        <ion-label position="floating">Disability Registration Date</ion-label>
+        <ion-input [(ngModel)]="employee.disability_reg_date" class="ion-text-end"></ion-input>
+      </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
